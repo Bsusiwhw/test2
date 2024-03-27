@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="carousel.css">
+    <title>Southern Metrology & Calibration Services Inc.</title>
+    <style>
+        :root{
+            --primary: hsla(0, 4%, 15%, 0.874);
+            --secondary: hsla(230, 53%, 60%, 0.904);
+        }
+        .navbar {
+            width: 100%;
+          
+            color: #000000; /* Remove margin from the navbar */
+        }
+
+        .navbar-nav .nav-link {
+            color: #0d6efd;
+            border-radius: 40px;
+            padding: 5px 20px; /* Change text color to black */
+            border: 1px;
+            
+        }
+        @media (max-width: 768px) {
+            .nav-link {
+                font-size: 10px;
+            }
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #0d6efd;
+            color: rgb(255, 255, 255);
+        }
+
+        /* Adjust logo size for smaller devices */
+        .navbar-brand img {
+            max-height: 45px;
+        }
+
+        /* Adjust logo size for larger devices */
+        @media (min-width: 1200px) {
+            .navbar-brand img {
+                max-height: 60px;
+                width: auto;
+                /* Ensure the width adjusts proportionally */
+            }
+        }
+        
+        header{
+            display: flex;
+            align-items: center;
+            
+            justify-content: space-between;
+        }
+        .bn{
+            background-image: linear-gradient(to right, var(--primary), var(--secondary)),
+                                url("bg1.jpg");  
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            background-position: center;
+        }
+        .text{
+            display:flex;
+            align-items: center;
+            font-size: auto;
+            font-family: arial;
+            color: #f6f1f1;
+            text-align: justify;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+        }
+        @media (min-width: 400px) {
+            .text {
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size: 10px;
+            }
+        }
+
+        /* Adjust padding and font size for large screens */
+        @media (min-width: 992px) {
+            .text {
+                padding: 15px;
+                font-size: 15px;
+            }
+        }
+         /* Adjust font size for sssssssssssssssssssssssssssssssssssssssssssssssssssssssarger screens */
+
+        .c-item{
+            height: 280px;
+            object-fit: cover;     
+        }
+        @media (min-width: 400px) {
+            .c-item {
+                height: 150px;
+            }
+            
+        }
+        @media (min-width: 992px) {
+            .c-item {
+                height: 280px;
+            }
+            
+        }
+        t {
+            
+            align-items: center;
+            font-size: 30px;
+            font-family: arial;
+            color: #000000;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+             /* Default font size */
+        }
+        h1 {
+            
+            align-items: center;
+            font-size: 20px;
+            font-family: arial;
+            color: #000000;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            /* Default font size */
+        }
+
+        
+
+        /* Adjust font size for smaller screens */
+        @media (min-width: 400px) {
+            t {
+                font-size: 20px;
+            }
+            h1 {
+                font-size: 10px;
+            }
+            .bu{
+                width: 0px;
+  
+            }
+            
+        }
+
+        /* Adjust font size for larger screens */
+        @media (min-width: 992px) {
+            t {
+                font-size: 40px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+        }
+        h2{
+            height: 280px;
+            object-fit: cover;     
+        }
+
+       /* Adjust font size for sssssssssssssssssssssssssssssssssssssssssssssssssssssssarger screens */
+      
+        .left{
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #100f0f;
+            margin: 10px;
+            background-color: #f0f0f0;
+        } 
+        .right {
+            
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #100f0f;
+            margin: 10px;
+            background-color: #e0e0e0;  
+        }
+        @media (min-width: 992px) {
+            .info {
+                font-size: 11px;
+                padding: 5px;
+                display: flex;
+                width: 100%;
+                height: 350px;
+            }
+        }
+        @media (min-width: 992px) {
+            .right {
+                margin-right: 350px;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                margin-left: 25px;
+            }
+        }
+        @media (min-width: 992px) {
+            .left {
+                margin-left: 350px;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                margin-right: 25px;
+            }
+            .footer{
+                font-size: 15px;
+            }
+            }
+             .contacts {
+            text-align: right;
+            }
+        
+        @media (max-width: 700px) {
+            .contacts {
+                text-align: right;
+            }
+            .info{
+                font-size: 10px;
+                max-height: 305px;
+                display: flex;
+            }
+            
+            .contacts div {
+                margin-bottom: 0px;
+            }
+            
+            .contacts p1 {
+                display: inline-block;
+                margin-right: 15px;
+               
+            }
+            .right {
+                margin-right: 5px;
+                margin-top: 5px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+            }
+            .left {
+                margin-left: 5px;
+                margin-top: 5px;
+                margin-bottom: 10px;
+                margin-right: 5px;
+            }
+            .footer{
+                font-size: 10px;
+            }
+            }
+        
+            .email{
+                text-align: center;
+                padding-top: 20px;
+            }
+            .ser{
+                text-align: center;
+            }
+            .con{
+                text-align: center;
+            }
+            .list{
+                text-align: justify;
+            }
+ </style>
+
+
+</head>
+<body class="bn img-fluid">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="logo.png" alt="Logo" class="d-inline-block align-text-top me-2 img-fluid">
+                </a>
+
+                <!-- Navbar Toggler -->
+                <button class="navbar-toggler navbar-dark bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto  fw-bold">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Permits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Accreditation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Policies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Calibration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">PM and Validation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+    <div>
+        <p class="text">
+            Thank you for visiting Southern Metrology and Calibration Services, Inc. website.
+        </p>
+        <p class="text">
+            We, Southern Metrology and Calibration Services, Inc. would like to take this opportunity to show you the services, equipments and facilities that we have. Please take time to browse around for you to know more about the company, our policies and the services we can provide your company. Southern Metrology and Calibration Services, Inc. is an ISO/IEC 17025:2017 accreditted Calibration laboratory.
+            </p>
+
+        <p class="text">
+            As experts in metrology and calibration, we give you, your associates, and customers the confidence that your measurement procedures are always performed in accordance with your quality requirements. Our services also works as a quality label, that your test equipment is calibrated by an independent, qualified laboratory. You can be assured of top-notch performance delivery and professional quality services coming from our customer-focused and knowledgeable staff (with over twenty (20) years of metrology and calibration application experience), and we’ll be responsive to your needs.
+            </p>
+
+        <p class="text">
+            Our state of the art facilities and wide variety of Metrology and Calibration equipment can cater a small, to medium, to large enterprise. Feel free to contact us any time if you have questions or inquiries. The company is accredited by a number of accreditation bureaus and other government agencies.
+            </p>
+            
+        <p class="text">
+            Our metrology and calibration services are performed on-site at your facilities or in our state-of-the-art laboratories. And as part of our objectives, we implement turnaround time of five (5) to fifteen (15) working days, have the RECALL system, and provide logistics for collection, pick-up and delivery services.
+            </p>
+ 
+        <p class="text">
+            Looking forward to do business with you!
+            </p> 
+
+        <p class="text">
+            Southern Metrology and Calibration Services Management
+            </p>
+    </div>
+</div>
+<!-- 2nd divvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv -->
+<div1>
+   
+    <div id="hero-carousel" class="carousel slide bg-light" data-bs-ride="carousel">
+        
+   
+    
+
+
+       <!-- slide1 -->
+       <div class="carousel-inner">
+        <div class="carousel-indicators">
+            <button type="button" style="background-color: rgb(0, 0, 0);" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" style="background-color: rgb(0, 0, 0);" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" style="background-color: rgb(0, 0, 0);" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+         <div class="carousel-item active c-item">
+           
+           <div class="carousel-caption top-0 mt-4">
+               <t>Mission</t>
+               <h1>Strive to laboratory excellence and first choice in the Philippines.</h1>
+                
+             </div>
+         </div>
+
+
+
+        <!-- slide2 --> 
+         <div class="carousel-item c-item">
+           
+           <div class="carousel-caption top-0 mt-4">
+               <t>Vision</t>
+               <h1>To be center of excellence and source of references to achieve long-term customers’ satisfaction by providing quality service in a timely manner.</h1>
+                                    
+             </div>
+         </div>
+
+
+
+
+         <!-- slide3 -->
+         <div class="carousel-item c-item">
+           
+           <div class="carousel-caption top-0 mt-4">
+               <t>Value</t>
+               <h1>To serve our customers and associates through continuous improvement with sincerity, honesty and integrity.</h1>
+                               
+             </div>
+         </div>
+
+         <div class="bu">
+         <button class="carousel-control-prev"  type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden" >Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+       </div>
+       
+       </div1>
+
+
+       <!-- 3nd divvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv -->
+       <div class="info" style="background-color: rgb(149, 149, 218);">
+        <div class="left">
+        <div class="ser"><se>SERVICES OFFERED:</se></div>
+        <ol class="list">
+            <li>Calibration of Measuring Instruments</li>
+            <li>Training on Metrology, Calibration, ISO/IEC 17025;2017 Awareness, Internal Audit & Management System Related Courses</li>
+            <li>Proficiency Testing for the Calibration of Measuring Instruments</li>
+            <li>Biohazard Safety, Laminar Flow Cabinet and Fume Hood Certification</li>
+            <li>Gaseous Fumigation</li>
+            <li>Supply and Installation of Activated Carbon Filter and HEPA Filter</li>
+            <li>Temperature Mapping</li>
+        </ol>
+    </div>
+    <div class="right">
+        <div class="con"><co>Contact Options</co></div>
+        <div class="contact-info">
+            <dvi>Sales Dept.:</div>
+            <div class="contacts">
+            <div><p1>Globe: 0945 408 2266</p1></div>
+            <div><p1>Sun: 0933 855 8815</p1></div>
+            <div><p1>Manila Line: (02) 8533 0162</p1></div>
+            <div><p1>Laguna Line: (049) 511 8177</p1></div>
+        
+    </div>
+       
+            <div>Receiving Section:</dvi>
+            <div class="contacts">
+           <div><p1>Globe: 0917 620 6825</p1></div>
+           <div><p1>Sun: 0933 855 8816</p1></div>
+           <div><p1>Laguna Line: (049) 250 0217</p1></div>
+    
+        </div>
+   
+            <dvi>Releasing & <br> Billing Section:</dvi>
+            <div class="contacts">
+            <div><p1>Globe: 0995 390 1716</p1></div>
+            <div><p1>Smart: 0949 996 7798</p1></div>
+            <div><p1>Sun: 0933 855 8816</p1></div>
+            <div><p1>Manila Line: (02) 8533 0165</p1></div>
+        </div>
+        <div class="email">
+        <p>Email: southerncalab@gmail.com</p>
+    </div>
+    </div>
+
+
+    </div>
+</div>
+<footer class="footer text-center">
+    <p>N ISO/IEC 17025:2017 ACCREDITED CALIBRATION LABORATORY <br>
+    Copyright © 2018 All Rights Reserved. Southern Metrology and Calibration Services, Inc.</p>
+</footer>
+
+
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
